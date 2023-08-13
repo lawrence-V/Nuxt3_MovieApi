@@ -9,9 +9,14 @@ export default defineNuxtConfig({
     transpile: ["vuetify"]
    },
 
+   modules: ['@vueuse/nuxt'],
+
    runtimeConfig: {
-    apiKey:process.env.NUXT_API_KEY,
-    apiBaseUrl:process.env.NUXT_API_BASE_URL,
+    apiKey:'',
+    apiBaseUrl:'',
+    public: {
+      imgBaseUrl: ''
+    }
    }
   
 })
